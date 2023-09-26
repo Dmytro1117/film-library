@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "homepage": "dmytro1117.github.io/film-collections/",
+  "source": "src/index.html",
   "scripts": {
     "start": "parcel src/index.html --open --no-cache",
     "build": "parcel build src/*.html --public-url /film-collections/"
