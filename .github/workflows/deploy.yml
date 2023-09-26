@@ -11,10 +11,8 @@ jobs:
       - name: Checkout 🛎️
         uses: actions/checkout@v2.3.1
 
-      - name: Create .env
-        run: |
-          touch .env
-          echo TMDB_KEY = ${{secrets.TMDB_KEY}}  >> .env
+      - name: Use secret
+        run: echo ${{ secrets.TMDB_KEY }}
 
       - name: Install and Build 🔧
         run: |
