@@ -16,6 +16,13 @@ jobs:
           touch .env
           echo TMDB_KEY = ${{secrets.TMDB_KEY}}  >> .env
           echo FIREBASE_KEY = ${{secrets.FIREBASE_KEY}}  >> .env
+          echo FIREBASE_DOMAIN = ${{secrets.FIREBASE_DOMAIN}}  >> .env
+          echo FIREBASE_DATABASE = ${{secrets.FIREBASE_DATABASE}}  >> .env
+          echo FIREBASE_PROJECT = ${{secrets.FIREBASE_PROJECT}}  >> .env
+          echo FIREBASE_STORAGE = ${{secrets.FIREBASE_STORAGE}}  >> .env
+          echo FIREBASE_MESSAGIN = ${{secrets.FIREBASE_MESSAGIN}}  >> .env
+          echo FIREBASE_APP_ID = ${{secrets.FIREBASE_APP_ID}}  >> .env
+          echo FIREBASE_MESSUREMENT = ${{secrets.FIREBASE_MESSUREMENT}}  >> .env
 
       - name: Install and Build 🔧
         run: |

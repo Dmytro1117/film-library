@@ -1,18 +1,26 @@
 import { initializeApp } from 'firebase/app';
 import { getFirestore } from 'firebase/firestore';
 import { getAuth } from 'firebase/auth';
-import { FIREBASE_KEY } from '../../constants/envConsts';
+import {
+  FIREBASE_KEY,
+  FIREBASE_DOMAIN,
+  FIREBASE_DATABASE,
+  FIREBASE_PROJECT,
+  FIREBASE_STORAGE,
+  FIREBASE_MESSAGIN,
+  FIREBASE_APP_ID,
+  FIREBASE_MESSUREMENT,
+} from '../../constants/envConsts';
 
 export const firebaseConfig = {
   apiKey: FIREBASE_KEY,
-  authDomain: 'filmoteka-a6ea9.firebaseapp.com',
-  databaseURL:
-    'https://filmoteka-a6ea9-default-rtdb.europe-west1.firebasedatabase.app',
-  projectId: 'filmoteka-a6ea9',
-  storageBucket: 'filmoteka-a6ea9.appspot.com',
-  messagingSenderId: '824201120756',
-  appId: '1:824201120756:web:f8f623736e98ae62edc7a1',
-  measurementId: 'G-THM4WVYQNH',
+  authDomain: FIREBASE_DOMAIN,
+  databaseURL: FIREBASE_DATABASE,
+  projectId: FIREBASE_PROJECT,
+  storageBucket: FIREBASE_STORAGE,
+  messagingSenderId: FIREBASE_MESSAGIN,
+  appId: FIREBASE_APP_ID,
+  measurementId: FIREBASE_MESSUREMENT,
 };
 
 export const db = getFirestore(initializeApp(firebaseConfig));
