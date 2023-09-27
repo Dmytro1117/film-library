@@ -1,13 +1,13 @@
 {
   "name": "goit-js-team-project",
   "version": "1.0.0",
-  "homepage": "https://github.com/Dima-Davidenko/filmoteka",
+  "homepage": "https://github.com/Dmytro1117/film-library",
   "description": "",
   "source": "src/index.html",
   "targets": {
     "default": {
       "distDir": "./output",
-      "publicUrl": "/filmoteka/"
+      "publicUrl": "/film-library/"
     }
   },
   "scripts": {
@@ -16,13 +16,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Dima-Davidenko/filmoteka.git"
+    "url": "git+https://github.com/Dmytro1117/film-library"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Dima-Davidenko/filmoteka/issues"
+    "url": "https://github.com/Dmytro1117/film-library/issues"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.8.0",
