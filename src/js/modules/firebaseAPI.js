@@ -1,4 +1,4 @@
-import { FIREBASE_CONFIG } from '../utils/envConsts';
+// import { FIREBASE_CONFIG } from '../utils/envConsts';
 import { initializeApp } from 'firebase/app';
 import {
   getAuth,
@@ -20,7 +20,16 @@ import fetchAPI from './fetchAPI';
 
 class firebaseAPI {
   constructor(signInBtnEl, logOutBtnEl) {
-    this.firebaseConfig = JSON.parse(FIREBASE_CONFIG);
+    this.firebaseConfig = {
+      apiKey: 'AIzaSyBJTGyIaG5Mz5xfP8_SkDgfhX84CRmJUU4',
+      authDomain: 'filmoteka-a6ea9.firebaseapp.com',
+      databaseURL: 'https://filmoteka-a6ea9-default-rtdb.europe-west1.firebasedatabase.app',
+      projectId: 'filmoteka-a6ea9',
+      storageBucket: 'filmoteka-a6ea9.appspot.com',
+      messagingSenderId: '824201120756',
+      appId: '1:824201120756:web:f8f623736e98ae62edc7a1',
+      measurementId: 'G-THM4WVYQNH',
+    };
     this.firebaseApp = initializeApp(this.firebaseConfig);
     this.firebaseAuth = getAuth(this.firebaseApp);
     this.providerGoogle = new GoogleAuthProvider();
