@@ -15,7 +15,7 @@ jobs:
         run: |
           touch .env
           echo TMDB_KEY = ${{secrets.TMDB_KEY}}  >> .env
-          echo FIREBASE_CONFIG = ${{secrets.FIREBASE_CONFIG}}  >> .env
+          echo FIREBASE_KEY = ${{secrets.FIREBASE_KEY}}  >> .env
 
       - name: Install and Build 🔧
         run: |

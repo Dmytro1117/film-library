@@ -1,10 +1,10 @@
 import { initializeApp } from 'firebase/app';
 import { getFirestore } from 'firebase/firestore';
 import { getAuth } from 'firebase/auth';
-import { FIREBASE_CONFIG } from '../../constants/envConsts';
+import { FIREBASE_KEY } from '../../constants/envConsts';
 
 export const firebaseConfig = {
-  apiKey: FIREBASE_CONFIG,
+  apiKey: FIREBASE_KEY,
   authDomain: 'filmoteka-a6ea9.firebaseapp.com',
   databaseURL:
     'https://filmoteka-a6ea9-default-rtdb.europe-west1.firebasedatabase.app',
