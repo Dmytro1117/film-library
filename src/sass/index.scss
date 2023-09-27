@@ -1,18 +1,18 @@
-@import '~node_modules/modern-normalize/modern-normalize.css';
-@import '~node_modules/tui-pagination/dist/tui-pagination.min.css';
-
-@import './components/basicLightbox';
-@import './components/filters';
-@import './components/theme-switcher';
-@import './components/up-btn';
-
+@import './base/normalize';
+@import './base/body';
+@import './base/fonts';
 @import './utils/variables';
-
-@import './base/base';
-@import './base/container';
-
-@import './components/loading-dots';
-@import './layout/header';
-@import './layout/main';
-@import './layout/footer';
-@import './layout/modal';
+@import './utils/breakpoint';
+@import './components/loader';
+@import './components/home-header';
+@import './components/library-header';
+@import './components/main';
+@import './components/pagination';
+@import './components/up-btn';
+@import './components/modal-card';
+@import './components/slider-trends';
+@import './components/footer';
+@import './components/auth';
+@import './components/modal-developer';
+@import './utils/scroll';
+@import './components/dark-theme';
